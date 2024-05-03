@@ -20,7 +20,7 @@ def index():
     if current_user.is_authenticated: 
         return redirect(url_for('profile')) 
     else: 
-        return render_template('register') 
+        return render_template('index.html') 
      
 @app.route('/home') 
 def home(): 
@@ -61,7 +61,7 @@ def login():
             flash('Invalid username or password') 
     return render_template('login.html') 
  
-@app.route('/register', methods=['GET', 'POST']) 
+@app.route('/', methods=['GET', 'POST']) 
 def register(): 
     if current_user.is_authenticated: 
         return redirect(url_for('profile')) 
