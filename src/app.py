@@ -15,7 +15,7 @@ login_manager.login_view = 'login'
 def load_user(user_id): 
     return User.query.get(int(user_id)) 
  
-@app.route('/register') 
+@app.route('/') 
 def index(): 
     if current_user.is_authenticated: 
         return redirect(url_for('profile')) 
