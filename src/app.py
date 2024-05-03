@@ -20,7 +20,7 @@ def index():
     if current_user.is_authenticated: 
         return redirect(url_for('profile')) 
     else: 
-        return render_template('index.html') 
+        return render_template('register') 
      
 @app.route('/home') 
 def home(): 
