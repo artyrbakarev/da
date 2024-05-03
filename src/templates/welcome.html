@@ -1,6 +1,7 @@
 <!Doctype html>
 <html>
-  <link rel="stylesheet" type="text/css" href="/static/index.css">
+  <link rel="stylesheet" type="text/css"
+    href="{{ url_for('static', filename='index.css') }}">
   <head>
     <title>Веб-страница</title>
     <meta charset="UTF-8">
@@ -32,7 +33,8 @@
 
       <div class="main">
         <h2>Продажа уникальных товаров, созданных мастерами</h2>
-        <img style="height:450px;" src="https://chainica.media/wp-content/uploads/2021/09/ffr-15.jpg">
+        <img style="height:450px;"
+          src="https://chainica.media/wp-content/uploads/2021/09/ffr-15.jpg">
         <h5>Вся посуда изготавливается на наших фабриках!</h5>
         <div class="fakeimg" style="height:150px;">Посуда лучшего качествва,
           изготоваленная в Италии со вкусом.Наши товары самые лучшие, сделанные
