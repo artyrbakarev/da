@@ -20,14 +20,14 @@ def index():
     if current_user.is_authenticated: 
         return redirect(url_for('profile')) 
     else: 
-        return render_template('index.html') 
+        return render_template('register.html') 
      
 @app.route('/home') 
 def home(): 
     if current_user.is_authenticated:
         return render_template('welcome.html') 
     else: 
-        return render_template('register') 
+        return render_template('register.html') 
     
 @app.route('/product') 
 def product(): 
