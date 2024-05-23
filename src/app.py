@@ -44,6 +44,14 @@ def delivery():
 def cooperate(): 
         return render_template('cooperate.html') 
 
+@app.route('/catalog1') 
+def catalog1(): 
+        return render_template('catalog1.html') 
+
+@app.route('/catalog2') 
+def catalog2(): 
+        return render_template('catalog2.html') 
+
      
  
 @app.route('/login', methods=['GET', 'POST']) 
