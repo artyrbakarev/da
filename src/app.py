@@ -96,7 +96,7 @@ def error405():
         return render_template('405.html')
 
 
- class Except402 (exceptions.HTTPException):
+class Except402 (exceptions.HTTPException):
      code = 402
      description = 'Что то 402'
 
