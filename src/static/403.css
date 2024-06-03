@@ -1,0 +1,19 @@
+.center {
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
+}
+
+.btn {
+  display: inline-block;
+  margin-left: 1px;
+  background: yellow; 
+  color: black; 
+  padding: 1em 50rem; 
+  font-size: 1.4em;
+  text-decoration: none; 
+  border-radius: 7px; 
+ }
+ 
