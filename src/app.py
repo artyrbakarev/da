@@ -95,6 +95,10 @@ def error405(e):
 def error405(): 
         return render_template('405.html')
 
+@app.route('/402') 
+def error402(): 
+        return render_template('402.html')
+
 
 class Except402 (exceptions.HTTPException):
      code = 402
