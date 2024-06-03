@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_login import LoginManager, login_user, current_user, logout_user 
 from werkzeug.security import check_password_hash, generate_password_hash 
 from models import User, db 
+from werkzeug import exceptions
  
 app = Flask(__name__) 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db' 
