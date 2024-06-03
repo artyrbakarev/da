@@ -93,6 +93,15 @@ def error405(e):
 @app.route('/405') 
 def error405(): 
         return render_template('405.html')
+ class Except402 (exceptions.HTTPException):
+     code = 402
+     description = 'Что то 402'
+
+def handle_402(e):
+    return render_template('402.html')
+
+app.register_error_handler(Except402, handle_402)
+
 
      
  
