@@ -52,6 +52,48 @@ def catalog1():
 def catalog2(): 
         return render_template('catalog2.html') 
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404 
+
+@app.route('/404') 
+def error404(): 
+        return render_template('404.html')
+
+@app.errorhandler(403)
+def error403(e):
+    return render_template('403.html'), 403 
+
+@app.route('/403') 
+def error403(): 
+        return render_template('403.html')
+
+@app.errorhandler(401)
+def error401(e):
+    return render_template('401.html'), 401 
+
+@app.route('/401') 
+def error401(): 
+        return render_template('401.html')
+
+@app.errorhandler(400)
+def error400(e):
+    return render_template('400.html'), 400 
+
+
+@app.route('/400') 
+def error400(): 
+        return render_template('400.html')
+
+
+@app.errorhandler(405)
+def error405(e):
+    return render_template('405.html'), 405      
+
+@app.route('/405') 
+def error405(): 
+        return render_template('405.html')
+
      
  
 @app.route('/login', methods=['GET', 'POST']) 
